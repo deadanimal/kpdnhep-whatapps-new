@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://tempuri.org/CRSService" targetNamespace="http://tempuri.org/CRSService">
+<wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema>
+<xsd:import schemaLocation="crsservice.xsd1.xsd" namespace="http://tempuri.org/CRSService"/>
+<xsd:import schemaLocation="crsservice.xsd2.xsd" namespace="http://tempuri.org/CRSService"/></xsd:schema></wsdl:types>
+<wsdl:message name="enquireUserData_in">
+<wsdl:part name="enquireUserDataReq" element="xsns:enquireUserDataReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="enquireUserData_out">
+<wsdl:part name="enquireUserDataRes" element="xsns:enquireUserDataRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="retrieveCitizensData_in">
+<wsdl:part name="retrieveCitizensDataReq" element="xsns:retrieveCitizensDataReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="retrieveCitizensData_out">
+<wsdl:part name="retrieveCitizensDataRes" element="xsns:retrieveCitizensDataRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="retrieveCitizensDataByKiosk_in">
+<wsdl:part name="retrieveCitizensDataKioskReq" element="xsns:retrieveCitizensDataKioskReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="retrieveCitizensDataByKiosk_out">
+<wsdl:part name="retrieveCitizensDataKioskRes" element="xsns:retrieveCitizensDataKioskRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="retrieveCitizensDataByKioskResponse">
+<wsdl:part name="retrieveCitizensDataKioskRes" element="xsns:retrieveCitizensDataKioskRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateContactInformation_in">
+<wsdl:part name="updateContactInformationReq" element="xsns:updateContactInformationReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateContactInformation_out">
+<wsdl:part name="updateContactInformationRes" element="xsns:updateContactInformationRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateCorrespondenceAddressByKiosk_in">
+<wsdl:part name="updateCorrAddrKioskReq" element="xsns:updateCorrAddrKioskReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateCorrespondenceAddressByKiosk_out">
+<wsdl:part name="updateCorrAddrKioskRes" element="xsns:updateCorrAddrKioskRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateCorrespondenceAddressByKioskResponse">
+<wsdl:part name="updateCorrAddrKioskRes" element="xsns:updateCorrAddrKioskRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateVerificationData_in">
+<wsdl:part name="updateVerificationDataReq" element="xsns:updateVerificationDataReq" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:message name="updateVerificationData_out">
+<wsdl:part name="updateVerificationDataRes" element="xsns:updateVerificationDataRes" xmlns:xsns="http://tempuri.org/CRSService"/></wsdl:message>
+<wsdl:portType name="CRSService">
+<wsdl:operation name="enquireUserData">
+<wsdl:input name="enquireUserData_Input" message="ns0:enquireUserData_in"/>
+<wsdl:output name="enquireUserData_Output" message="ns0:enquireUserData_out"/></wsdl:operation>
+<wsdl:operation name="retrieveCitizensData">
+<wsdl:input name="retrieveCitizensData_Input" message="ns0:retrieveCitizensData_in"/>
+<wsdl:output name="retrieveCitizensData_Output" message="ns0:retrieveCitizensData_out"/></wsdl:operation>
+<wsdl:operation name="retrieveCitizensDataByKiosk">
+<wsdl:input name="retrieveCitizensDataByKiosk_Input" message="ns0:retrieveCitizensDataByKiosk_in"/>
+<wsdl:output name="retrieveCitizensDataByKiosk_Output" message="ns0:retrieveCitizensDataByKiosk_out"/></wsdl:operation>
+<wsdl:operation name="updateContactInformation">
+<wsdl:input name="updateContactInformation_Input" message="ns0:updateContactInformation_in"/>
+<wsdl:output name="updateContactInformation_Output" message="ns0:updateContactInformation_out"/></wsdl:operation>
+<wsdl:operation name="updateCorrespondenceAddressByKiosk">
+<wsdl:input name="updateCorrespondenceAddressByKiosk_Input" message="ns0:updateCorrespondenceAddressByKiosk_in"/>
+<wsdl:output name="updateCorrespondenceAddressByKiosk_Output" message="ns0:updateCorrespondenceAddressByKiosk_out"/></wsdl:operation>
+<wsdl:operation name="updateVerificationData">
+<wsdl:input name="updateVerificationData_Input" message="ns0:updateVerificationData_in"/>
+<wsdl:output name="updateVerificationData_Output" message="ns0:updateVerificationData_out"/></wsdl:operation></wsdl:portType>
+<wsdl:binding name="CRSServiceSOAP" type="ns0:CRSService">
+<soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="enquireUserData">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="enquireUserData_Input">
+<soap11:body parts="enquireUserDataReq" use="literal"/></wsdl:input>
+<wsdl:output name="enquireUserData_Output">
+<soap11:body parts="enquireUserDataRes" use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="retrieveCitizensData">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="retrieveCitizensData_Input">
+<soap11:body parts="retrieveCitizensDataReq" use="literal"/></wsdl:input>
+<wsdl:output name="retrieveCitizensData_Output">
+<soap11:body parts="retrieveCitizensDataRes" use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="retrieveCitizensDataByKiosk">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="retrieveCitizensDataByKiosk_Input">
+<soap11:body parts="retrieveCitizensDataKioskReq" use="literal"/></wsdl:input>
+<wsdl:output name="retrieveCitizensDataByKiosk_Output">
+<soap11:body parts="retrieveCitizensDataKioskRes" use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="updateContactInformation">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="updateContactInformation_Input">
+<soap11:body parts="updateContactInformationReq" use="literal"/></wsdl:input>
+<wsdl:output name="updateContactInformation_Output">
+<soap11:body parts="updateContactInformationRes" use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="updateCorrespondenceAddressByKiosk">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="updateCorrespondenceAddressByKiosk_Input">
+<soap11:body parts="updateCorrAddrKioskReq" use="literal"/></wsdl:input>
+<wsdl:output name="updateCorrespondenceAddressByKiosk_Output">
+<soap11:body parts="updateCorrAddrKioskRes" use="literal"/></wsdl:output></wsdl:operation>
+<wsdl:operation name="updateVerificationData">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="updateVerificationData_Input">
+<soap11:body parts="updateVerificationDataReq" use="literal"/></wsdl:input>
+<wsdl:output name="updateVerificationData_Output">
+<soap11:body parts="updateVerificationDataRes" use="literal"/></wsdl:output></wsdl:operation></wsdl:binding>
+<wsdl:service name="CRSService">
+<wsdl:port name="CRSServiceSOAP" binding="ns0:CRSServiceSOAP">
+<soap11:address location="https://esb.myidentity.gov.my:81/crsservice"/></wsdl:port></wsdl:service></wsdl:definitions>

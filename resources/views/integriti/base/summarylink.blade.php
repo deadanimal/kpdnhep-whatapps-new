@@ -1,0 +1,1 @@
+<a onclick="showsummaryintegriti('{{ $integriti->id }}')">{{ $integriti->IN_CASEID }}</a>

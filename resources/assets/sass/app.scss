@@ -1,0 +1,27 @@
+#f1f6f8
+// Fonts
+/*@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);*/
+
+// Variables
+/*@import "variables";*/
+
+// Bootstrap
+/*@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";*/
+/*$fa-font-path: "/eAduanV2/public/fonts/vendor/inspina/font-awesome" !default;*/
+
+@import "themes/inspinia/css/bootstrap.min";
+@import "themes/inspinia/font-awesome/scss/font-awesome";
+@import "themes/inspinia/css/plugins/iCheck/custom";
+@import "themes/inspinia/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox";
+
+@import "themes/inspinia/css/plugins/dataTables/datatables.min";
+/*@import "themes/inspinia/css/plugins/datapicker/datepicker3";*/
+@import "themes/ace/css/datepicker";
+@import "themes/ace/css/daterangepicker";
+@import "themes/ace/css/bootstrap-timepicker";
+@import "themes/ace/css/bootstrap-datetimepicker";
+/*@import "themes/inspinia/css/plugins/daterangepicker/daterangepicker-bs3";*/
+/*@import "themes/inspinia/css/plugins/select2/select2.min";*/
+
+@import "themes/inspinia/scss/style";
+@import "themes/inspinia/css/animate";

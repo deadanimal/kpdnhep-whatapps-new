@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:mrm="http://tempuri.org/CRSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/CRSService" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/CRSService">
+			
+<xsd:include schemaLocation="crsservice.xsd2.xsd"/>
+		</xsd:schema>

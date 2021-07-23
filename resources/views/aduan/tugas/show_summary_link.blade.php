@@ -1,0 +1,1 @@
+<a id="{{ $penugasan->CA_CASEID }}" onclick="ShowSummary('{{$penugasan->CA_CASEID}}')">{{$penugasan->CA_CASEID}}</a>

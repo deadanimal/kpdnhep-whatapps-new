@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mrm="http://tempuri.org/CRSService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/CRSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/CRSService">
+      
+    
+<xsd:complexType name="retrieveCitizensDataReq">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="BranchCode" type="xsd:string"/>
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+			
+<xsd:element name="RequestIndicator" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+    
+<xsd:element name="retrieveCitizensDataReq" type="mrm:retrieveCitizensDataReq">
+	</xsd:element>
+	
+    
+<xsd:complexType name="retrieveCitizensDataRes">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="BranchCode" type="xsd:string"/>
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+			
+<xsd:element name="MessageCode" type="xsd:string"/>
+			
+<xsd:element name="Message" type="xsd:string"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+			
+<xsd:element name="Name" type="xsd:string"/>
+			
+<xsd:element name="DateOfBirth" type="xsd:date"/>
+			
+<xsd:element name="Gender" type="xsd:string"/>
+			
+<xsd:element name="Race" type="xsd:string"/>
+			
+<xsd:element name="Religion" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress1" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress2" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress3" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress1" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress2" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress3" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress4" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress5" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityDescription" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCountryCode" type="xsd:string"/>
+			
+<xsd:element name="OldICnumber" type="xsd:string"/>
+			
+<xsd:element name="DateOfDeath" type="xsd:date"/>
+			
+<xsd:element name="CitizenshipStatus" type="xsd:string"/>
+			
+<xsd:element name="ResidentialStatus" type="xsd:string"/>
+			
+<xsd:element name="EmailAddress" type="xsd:string"/>
+			
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+			
+<xsd:element name="AddressStatus" type="xsd:string"/>
+			
+<xsd:element name="RecordStatus" type="xsd:string"/>
+			
+<xsd:element name="NewICNumber" type="xsd:string"/>
+			
+<xsd:element name="AFISIndicator" type="xsd:string"/>
+			
+<xsd:element name="RightFingerIndex" type="xsd:string"/>
+			
+<xsd:element name="LeftFingerIndex" type="xsd:string"/>
+			
+<xsd:element name="RightMinutiae" type="xsd:string"/>
+			
+<xsd:element name="LeftMinutiae" type="xsd:string"/>
+			
+<xsd:element name="Photo" type="xsd:string"/>
+            
+<xsd:element name="PermanentAddressCityDesc" type="xsd:string"/>
+            
+<xsd:element name="CorrespondenceAddressUpdateDate" type="xsd:dateTime"/>
+            
+<xsd:element name="CorrespondenceAddressUpdateBy" type="xsd:string"/>
+            
+<xsd:element name="VerifyStatus" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>  
+    
+<xsd:element name="retrieveCitizensDataRes" type="mrm:retrieveCitizensDataRes">
+	</xsd:element>
+	
+	
+<xsd:complexType name="updateContactInformationReq">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="BranchCode" type="xsd:string"/>
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress1" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress2" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress3" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress4" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress5" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityDescription" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCountryCode" type="xsd:string"/>
+            
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+            
+<xsd:element name="EmailAddress" type="xsd:string"/>
+            
+<xsd:element name="AddressUpdateDateTime" type="xsd:dateTime"/>
+            
+<xsd:element name="FromBatch" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>
+    
+<xsd:element name="updateContactInformationReq" type="mrm:updateContactInformationReq">
+	</xsd:element>
+	
+	
+<xsd:complexType name="updateContactInformationRes">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="BranchCode" type="xsd:string"/>
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+			
+<xsd:element name="MessageCode" type="xsd:string"/>
+			
+<xsd:element name="Message" type="xsd:string"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>			
+		</xsd:sequence>
+	</xsd:complexType>  
+    
+<xsd:element name="updateContactInformationRes" type="mrm:updateContactInformationRes">
+	</xsd:element>
+	
+    
+<xsd:complexType name="complexType">
+    
+<xsd:sequence/>
+  </xsd:complexType>
+    
+      
+<xsd:complexType name="retrieveCitizensDataKioskReq">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+            
+<xsd:element name="BranchCode" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>
+    
+<xsd:element name="retrieveCitizensDataKioskReq" type="mrm:retrieveCitizensDataKioskReq">
+	</xsd:element>
+	
+	
+<xsd:complexType name="retrieveCitizensDataKioskRes">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+			
+<xsd:element name="MessageCode" type="xsd:string"/>
+			
+<xsd:element name="Message" type="xsd:string"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+			
+<xsd:element name="Name" type="xsd:string"/>
+			
+<xsd:element name="DateOfBirth" type="xsd:date"/>
+			
+<xsd:element name="Gender" type="xsd:string"/>
+			
+<xsd:element name="Race" type="xsd:string"/>
+			
+<xsd:element name="Religion" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress1" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress2" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddress3" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="PermanentAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress1" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress2" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress3" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress4" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress5" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityDescription" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCountryCode" type="xsd:string"/>
+			
+<xsd:element name="OldICnumber" type="xsd:string"/>
+			
+<xsd:element name="CitizenshipStatus" type="xsd:string"/>
+			
+<xsd:element name="ResidentialStatus" type="xsd:string"/>
+            
+<xsd:element name="RecordStatus" type="xsd:string"/>
+			
+<xsd:element name="NewICNumber" type="xsd:string"/>
+            
+<xsd:element name="PermanentAddressCityDesc" type="xsd:string"/>
+            
+<xsd:element name="EmailAddress" type="xsd:string"/>
+            
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+            
+<xsd:element name="BranchCode" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>  
+    
+<xsd:element name="retrieveCitizensDataKioskRes" type="mrm:retrieveCitizensDataKioskRes">
+	</xsd:element>
+	
+	
+	
+
+<xsd:complexType name="updateCorrAddrKioskReq">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>  
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress1" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress2" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress3" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress4" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddress5" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressPostcode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCityDescription" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressStateCode" type="xsd:string"/>
+			
+<xsd:element name="CorrespondenceAddressCountryCode" type="xsd:string"/>
+			
+<xsd:element name="AddressUpdateDateTime" type="xsd:dateTime"/>
+            
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+            
+<xsd:element name="EmailAddress" type="xsd:string"/>
+            
+<xsd:element name="BranchCode" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>
+    
+<xsd:element name="updateCorrAddrKioskReq" type="mrm:updateCorrAddrKioskReq">
+	</xsd:element>
+	
+	
+<xsd:complexType name="updateCorrAddrKioskRes">
+		
+<xsd:sequence>
+			
+<xsd:element name="AgencyCode" type="xsd:string"/>   
+			
+<xsd:element name="UserId" type="xsd:string"/>
+			
+<xsd:element name="TransactionCode" type="xsd:string"/>
+			
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+			
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+			
+<xsd:element name="MessageCode" type="xsd:string"/>
+			
+<xsd:element name="Message" type="xsd:string"/>
+			
+<xsd:element name="ICNumber" type="xsd:string"/>			
+            
+<xsd:element name="BranchCode" type="xsd:string"/>
+        </xsd:sequence>
+	</xsd:complexType>  
+    
+<xsd:element name="updateCorrAddrKioskRes" type="mrm:updateCorrAddrKioskRes">
+	</xsd:element>
+		
+
+    
+<xsd:complexType name="updateVerificationDataReq">
+    
+<xsd:sequence>
+      
+<xsd:element name="AgencyCode" type="xsd:string"/>
+      
+<xsd:element name="BranchCode" type="xsd:string"/>
+      
+<xsd:element name="UserId" type="xsd:string"/>
+      
+<xsd:element name="TransactionCode" type="xsd:string"/>
+      
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+      
+<xsd:element name="ICNumber" type="xsd:string"/>
+      
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+      
+<xsd:element name="EmailAddress" type="xsd:string"/>
+      
+<xsd:element name="SmsIndicator" type="xsd:string"/>
+      
+<xsd:element name="VerificationResult" type="xsd:string"/>
+            
+<xsd:element name="VerificationType" type="xsd:string"/>
+            
+<xsd:element name="ManualVerificationReason" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+    
+<xsd:complexType name="updateVerificationDataRes">
+    
+<xsd:sequence>
+      
+<xsd:element name="AgencyCode" type="xsd:string"/>
+      
+<xsd:element name="BranchCode" type="xsd:string"/>
+      
+<xsd:element name="UserId" type="xsd:string"/>
+      
+<xsd:element name="TransactionCode" type="xsd:string"/>
+      
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+      
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+      
+<xsd:element name="MessageCode" type="xsd:string"/>
+      
+<xsd:element name="Message" type="xsd:string"/>
+      
+<xsd:element name="ICNumber" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    
+<xsd:complexType name="enquireUserDataReq">
+    
+<xsd:sequence>
+      
+<xsd:element name="AgencyCode" type="xsd:string"/>
+      
+<xsd:element name="BranchCode" type="xsd:string"/>
+      
+<xsd:element name="UserId" type="xsd:string"/>
+      
+<xsd:element name="TransactionCode" type="xsd:string"/>
+      
+<xsd:element name="RequestDateTime" type="xsd:dateTime"/>
+      
+<xsd:element name="ICNumber" type="xsd:string"/>
+            
+<xsd:element name="RequestIndicator" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+    
+<xsd:complexType name="enquireUserDataRes">
+    
+<xsd:sequence>
+      
+<xsd:element name="AgencyCode" type="xsd:string"/>
+      
+<xsd:element name="BranchCode" type="xsd:string"/>
+      
+<xsd:element name="UserId" type="xsd:string"/>
+      
+<xsd:element name="TransactionCode" type="xsd:string"/>
+      
+<xsd:element name="ReplyDateTime" type="xsd:dateTime"/>
+      
+<xsd:element name="ReplyIndicator" type="xsd:string"/>
+      
+<xsd:element name="MessageCode" type="xsd:string"/>
+      
+<xsd:element name="Message" type="xsd:string"/>
+      
+<xsd:element name="ICNumber" type="xsd:string"/>
+      
+<xsd:element name="MobilePhoneNumber" type="xsd:string"/>
+      
+<xsd:element name="EmailAddress" type="xsd:string"/>
+      
+<xsd:element name="SmsIndicator" type="xsd:string"/>
+            
+<xsd:element name="Name" type="xsd:string"/>
+            
+<xsd:element name="RightMinutiae" type="xsd:string"/>
+            
+<xsd:element name="LeftMinutiae" type="xsd:string"/>
+            
+<xsd:element name="RightFingerIndex" type="xsd:string"/>
+            
+<xsd:element name="LeftFingerIndex" type="xsd:string"/>
+            
+<xsd:element name="AFISIndicator" type="xsd:string"/>
+            
+<xsd:element name="Photo" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+    
+<xsd:element name="updateVerificationDataReq" type="mrm:updateVerificationDataReq">
+  </xsd:element>
+    
+<xsd:element name="updateVerificationDataRes" type="mrm:updateVerificationDataRes">
+  </xsd:element>
+    
+<xsd:element name="enquireUserDataReq" type="mrm:enquireUserDataReq">
+  </xsd:element>
+    
+<xsd:element name="enquireUserDataRes" type="mrm:enquireUserDataRes">
+  </xsd:element>
+</xsd:schema>

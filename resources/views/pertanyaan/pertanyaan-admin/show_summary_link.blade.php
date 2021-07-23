@@ -1,0 +1,1 @@
+<a onclick="ShowSummary('{{$PertanyaanAdmin->AS_ASKID}}')">{{$PertanyaanAdmin->AS_ASKID}}</a>

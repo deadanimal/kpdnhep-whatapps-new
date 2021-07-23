@@ -1,0 +1,1 @@
+<a onclick="ShowSummary('{{$bukasmula->CA_CASEID}}')">{{$bukasmula->CA_CASEID}}</a>

@@ -1,0 +1,1 @@
+<div class='checkbox checkbox-primary'><input id='{{ $user->id }}' onclick='anyCheck("{{$user->id}}","{{$user->name}}")' type='checkbox'><label for='{{ $user->id }}'></label></div>
